@@ -1,0 +1,10 @@
+version: '3.1'
+services:
+  web:
+    image: drupal:8.9.1
+    volumes:
+      - ./web/modules:/var/www/html/modules:delegated
+      - ./web/themes:/var/www/html/themes:delegated
+      - ./web/sites/default/files:/var/www/html/sites/default/files:delegated
+    ports:
+      - 80:80
