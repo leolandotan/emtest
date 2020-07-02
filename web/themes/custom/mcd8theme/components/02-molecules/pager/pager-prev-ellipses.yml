@@ -1,0 +1,17 @@
+ellipses:
+  previous: true
+items:
+  previous:
+    href: '#'
+    attributes: ''
+  pages:
+    - href: '#'
+      attributes: ''
+    - href: '#'
+      attributes: ''
+    - href: '#'
+      attributes: ''
+    - href: '#'
+      attributes: ''
+    - href: '#'
+      attributes: ''
