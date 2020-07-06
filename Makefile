@@ -8,5 +8,8 @@ down:
 stop:
 	@docker-compose stop
 
-node-develop:
-	@docker-compose run --rm --service-ports node npm run develop
+theme-install:
+	@docker-compose run --rm node yarn
+
+theme-develop:
+	@docker-compose run --rm --service-ports node yarn develop

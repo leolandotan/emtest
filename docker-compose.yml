@@ -3,8 +3,19 @@ services:
   web:
     image: drupal:8.9.1
     volumes:
-      - ./web/modules:/var/www/html/modules:delegated
-      - ./web/themes:/var/www/html/themes:delegated
-      - ./web/sites/default/files:/var/www/html/sites/default/files:delegated
+      - ./vendor:/var/www/vendor:cached
+      - ./html/autoload.php:/var/www/html/autoload.php:cached
+      - ./html/modules:/var/www/html/modules:cached
+      - ./html/themes/custom/mcd8theme:/var/www/html/themes/custom/mcd8theme:cached
+      - ./html/sites/default/files:/var/www/html/sites/default/files:cached
     ports:
       - 80:80
+  node:
+    image: node:14.5
+    working_dir: /app
+    volumes:
+      - ./html/themes/custom/mcd8theme:/app:delegated
+    expose:
+      - 6006
+    ports:
+      - 8081:6006
