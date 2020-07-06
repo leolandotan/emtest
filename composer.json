@@ -32,32 +32,32 @@
     "extra": {
         "drupal-scaffold": {
             "locations": {
-                "web-root": "web/"
+                "web-root": "html/"
             }
         },
         "installer-paths": {
-            "web/core": [
+            "html/core": [
                 "type:drupal-core"
             ],
-            "web/libraries/{$name}": [
+            "html/libraries/{$name}": [
                 "type:drupal-library"
             ],
-            "web/modules/contrib/{$name}": [
+            "html/modules/contrib/{$name}": [
                 "type:drupal-module"
             ],
-            "web/profiles/contrib/{$name}": [
+            "html/profiles/contrib/{$name}": [
                 "type:drupal-profile"
             ],
-            "web/themes/contrib/{$name}": [
+            "html/themes/contrib/{$name}": [
                 "type:drupal-theme"
             ],
             "drush/Commands/contrib/{$name}": [
                 "type:drupal-drush"
             ],
-            "web/modules/custom/{$name}": [
+            "html/modules/custom/{$name}": [
                 "type:drupal-custom-module"
             ],
-            "web/themes/custom/{$name}": [
+            "html/themes/custom/{$name}": [
                 "type:drupal-custom-theme"
             ]
         },
